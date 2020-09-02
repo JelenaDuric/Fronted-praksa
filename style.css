@@ -1,31 +1,35 @@
 /* CSS HOMEPAGE*/ 
 /* zagrade:{} */
 
-.body{
+.body {
     background-color: #FAFAFA;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
     font-weight: normal;
     line-height: 1.6em;
-    margin-left:20%;
-    margin-bottom: 0;
+    margin: 0;
     width: 100%;
 }
 
-.container{
+.container {
     margin: auto;
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: flex-start;
+    align-items: baseline;
 }
 
-header{
+header {
     background-color:#6495ED;
     display: inline-block;
     width: 100%;
     margin-left: 0;
 }
 
-.header-logo{
+.header-logo {
     background-color: #6495ED;
     color: #fff;
     text-transform: uppercase;
@@ -35,45 +39,50 @@ header{
     float: left;
 }
 
-.menu{
-    display: inline;
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
     text-transform: uppercase;
     font-style: normal;
     font-weight: bolder;
     font-size: 15px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #fff;
 }
 
-.ul-nav{
+.ul-nav {
     list-style-type: none;
     text-align: center;
     padding: 0;
 }
 
-.nav-link-li-header{
-    display: inline;
+.nav-link-li-header {
+    display: inline-block;
     list-style-type: none;
     text-align: center;
     text-transform: uppercase;
     font-size: medium;
-
 }
 
-.ul-nav-login{
+.ul-nav-login {
     list-style-type: none;
     text-align: center;
     padding: 0;
-    display: inline;
+    margin: 15px;
+    display: flex;
     justify-content: flex-end;
 }
 
-.bttn-register-yellow{
+.bttn-register-yellow {
     text-align: center;
-    display: inline;
+    display: flex;
     color: white;
     background-color: #FFA500;
     border-radius: 25px;
@@ -81,41 +90,41 @@ a{
     margin: auto;
 } 
 
-.login{
-    display: inline;
+.login {
+    display: flex;
     text-transform: none;
     font-style: normal;
     font-size: 15px;
 }
 
-.learn-travel-magento{
+.learn-travel-magento {
     background-color: #6495ED;
     color: #fff;
     text-align: left;
 }
 
-.h1-magento{
+.h1-magento {
     font-size: large;
     color: #fff;
     font-weight: bold;
     text-align: left;
 }
 
-.paragraph-magento{
+.paragraph-magento {
     color: #fff;
     font-size: 10px;
     text-align: left;
 }
 
-.bttn-sign-up-yellow{
+.bttn-sign-up-yellow {
     text-align: center;
-    display: inline;
+    display: flex;
     color: white;
     background-color:#FFD700;
     border-radius: 25px;
 }
 
-.h2-heading{
+.h2-heading {
     text-decoration: none;
     text-align: left;
     text-transform: none;
@@ -123,30 +132,30 @@ a{
     text-align: justify;
 }
 
-.section-icons{
+.section-icons {
     margin-left: 20px;
     float: left;
     width: auto;
 }
 
-#icon-l{
+#icon-l {
     text-align: left;
     float: left;
 }
 
-#icon-r{
+#icon-r {
     text-align: right;
     float: right;
 }
 
-.register-yours-yellow{
+.register-yours-yellow {
     text-align: center;
-    display: inline;
+    display: flex;
     color: #FFA500;
     background-color: white;
 }
 
-.companies-in-the-iniciative{
+.companies-in-the-iniciative { 
     text-transform: uppercase;
     text-decoration: none;
     font-weight: normal;
@@ -157,13 +166,13 @@ a{
     font-size: xx-large;
 }
 
-.companies{
+.companies {
     justify-content: space-between;
     width: 25%;
     margin: 1px solid black;
 } 
 
-.name-company{
+.name-company {
     text-transform: none;
     text-decoration: none;
     font-style: normal;
@@ -171,7 +180,7 @@ a{
     font-weight: bold;
 }
 
-.about-company{
+.about-company {
     text-transform: none;
     text-decoration: none;
     font-style: normal;
@@ -179,7 +188,7 @@ a{
     font-weight: bold;
 }
 
-.text-company{
+.text-company {
     text-transform: none;
     text-align: left;
     text-decoration: none;
@@ -190,7 +199,7 @@ a{
     font-style: normal;
 }
 
-.bttn-view-profile{
+.bttn-view-profile {
     text-align: center;
     color: #1E90FF;
     background-color: white;
@@ -202,7 +211,7 @@ a{
     float: center;
 }
 
-.bttn-view-all-blue{
+.bttn-view-all-blue {
     text-align: center;
     color: white;
     background-color: #1E90FF;
@@ -214,7 +223,7 @@ a{
     float: center;
 }
 
-.heading-takeoff{
+.heading-takeoff {
     text-decoration: none;
     text-transform: none;
     text-align: right;
@@ -224,7 +233,7 @@ a{
     font-size: 15px;
 }
 
-.paragraph-takeoff{
+.paragraph-takeoff {
     text-decoration: none;
     text-transform: none;
     text-align: right;
@@ -234,12 +243,12 @@ a{
     font-size: 12px;
 }
 
-hr{
+hr {
     color: #FFA500;
     width: 50px;
 }
 
-.bttn-sign-up-blue{
+.bttn-sign-up-blue {
     text-align: center;
     color: white;
     background-color: #1E90FF;
@@ -250,7 +259,7 @@ hr{
     float: center;
 }
 
-.bttn-view-all-blue{
+.bttn-view-all-blue {
     text-align: center;
     color: white;
     background-color: #1E90FF;
@@ -261,7 +270,7 @@ hr{
     float: center;
 }
 
-.read-about-yellow{
+.read-about-yellow {
     text-align: left;
     text-decoration: none;
     text-transform: uppercase;
@@ -272,7 +281,7 @@ hr{
     font-style: normal;
 }
 
-.latest-exchange-stories{
+.latest-exchange-stories {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
@@ -283,7 +292,7 @@ hr{
     font-size: xx-large;
 }
 
-.date{
+.date {
     color: #DCDCDC;
     text-decoration: none;
     text-transform: none;
@@ -294,7 +303,7 @@ hr{
     font-style: normal;
 }
 
-.blog-headings{
+.blog-headings {
     color: black;
     text-decoration: none;
     text-transform: none;
@@ -305,7 +314,7 @@ hr{
     font-style: normal;
 }
 
-.blogs{
+.blogs {
     color: black;
     text-decoration: none;
     text-transform: none;
@@ -316,7 +325,7 @@ hr{
     font-style: normal;
 }
 
-.host-sender{
+.host-sender {
     color: #DCDCDC;
     text-decoration: none;
     text-transform: none;
@@ -327,7 +336,7 @@ hr{
     font-style: normal;
 }
 
-.datetime{
+.datetime { 
     color: #DCDCDC;
     text-decoration: none;
     text-transform: none;
@@ -338,14 +347,14 @@ hr{
     font-style: normal;
 }
 
-.image{
+.image {
     width: 500px;
     height: 350px;
-    display: inline;
+    display: flex;
 
 }
 
-.inchoo-logo{
+.inchoo-logo {
     width: 100px;
     height: 70px;
 }
@@ -355,7 +364,7 @@ hr{
     height: 70px;
 }
 
-.footer-paragraph{
+.footer-paragraph {
     font-size: 10px;
     font-style: normal;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -365,15 +374,15 @@ hr{
     text-decoration: none;
 }
 
-.footer-logo{
+.footer-logo {
     float: left;
     margin: 0;
     background-color: black;
     color: white;
 }
 
-.nav-link-li-footer{
-    display: inline;
+.nav-link-li-footer {
+    display: inline-block;
     list-style-type: none;
     text-align: center;
     text-transform: uppercase;
@@ -382,7 +391,7 @@ hr{
     font-family: 'Courier New', Courier, monospace;
 }
 
-.footer{
+.footer {
     margin: 0;
     background-color: black;
     color:white;
