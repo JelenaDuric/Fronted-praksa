@@ -2,7 +2,7 @@
 /* zagrade:{} */
 
 .body {
-    background-color: #FAFAFA;
+    background-color: white;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
@@ -12,14 +12,38 @@
     width: 100%;
 }
 
+.margin-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.margin-container-with-map {
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.margin-container-with-companies{
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: white;
+    background-image: url(/Users/frontendpraktikant/www/Fronted-praksa/bgimage.jpg);
+}
+
+.margin-container-with-blogs {
+    max-width: 1140px;
+    margin: 0 auto;
+    background-color: white;
+}
+
 .container {
     margin: auto;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     flex-basis: auto;
     justify-content: flex-start;
     align-items: baseline;
+    flex-wrap: wrap;
 }
 
 header {
@@ -33,15 +57,21 @@ header {
     background-color: #6495ED;
     color: #fff;
     text-transform: uppercase;
-    font-style: normal;
     font-weight: bolder;
     font-size: 30px;
-    float: left;
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
+}
+
+.margin-container-with-map {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: baseline;
 }
 
 .menu {
@@ -130,22 +160,46 @@ a {
     text-transform: none;
     color: black;
     text-align: justify;
+    list-style-type: none;
+    font-size: 25px;
+}
+
+.container-icons {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: stretch;
 }
 
 .section-icons {
-    margin-left: 20px;
-    float: left;
+    margin: auto;
     width: auto;
 }
 
 #icon-l {
-    text-align: left;
-    float: left;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    flex-basis: auto;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: flex-start;
 }
 
 #icon-r {
-    text-align: right;
-    float: right;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    flex-basis: auto;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    align-content: flex-end;
 }
 
 .register-yours-yellow {
@@ -207,8 +261,7 @@ a {
     padding: 20px;
     height: 10px;
     width: 130px;
-    margin: 1px solid #1E90FF;
-    float: center;
+    border: 1px solid #1E90FF;
 }
 
 .bttn-view-all-blue {
@@ -219,8 +272,7 @@ a {
     padding: 20px;
     height: 10px;
     width: 130px;
-    margin: 1px solid #1E90FF;
-    float: center;
+    border: 1px solid #1E90FF;
 }
 
 .heading-takeoff {
@@ -255,8 +307,7 @@ hr {
     border-radius: 25px;
     height: 10px;
     width: 130px;
-    margin: 1px solid #1E90FF;
-    float: center;
+    border: 1px solid #1E90FF;
 }
 
 .bttn-view-all-blue {
@@ -266,8 +317,7 @@ hr {
     border-radius: 25px;
     height: 10px;
     width: 130px;
-    margin: 1px solid #1E90FF;
-    float: center;
+    border: 1px solid #1E90FF;
 }
 
 .read-about-yellow {
@@ -375,10 +425,7 @@ hr {
 }
 
 .footer-logo {
-    float: left;
-    margin: 0;
-    background-color: black;
-    color: white;
+    display: inline-block;
 }
 
 .nav-link-li-footer {
@@ -393,8 +440,51 @@ hr {
 
 .footer {
     margin: 0;
+    border-left: 1px solid white;
     background-color: black;
     color:white;
+    display: flex;
+}
+
+.paragraph-logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.nav-link-li-footer {
     display: inline-block;
-    clear: both;
+    border-left: 1px solid white;
+    align-content: flex-end;
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style-type: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: medium;
+}
+
+.nav-link-li-footer-first {
+    display: inline-block;
+    align-content: flex-end;
+    padding-right: 20px;
+    margin: auto;
+}
+
+.logo {
+    margin: auto;
+    margin-top: 50px;
+    background-color: black;
+    color:white;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.navigation {
+    display: flex;
+    align-content: flex-end;
 }
