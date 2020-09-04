@@ -21,13 +21,26 @@
     max-width: 1140px;
     margin: 0 auto;
     background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: baseline;
+    position: relative;
 }
 
 .margin-container-with-companies{
     max-width: 1140px;
     margin: 0 auto;
     background-color: white;
-    background-image: url(/Users/frontendpraktikant/www/Fronted-praksa/bgimage.jpg);
+    background-image: url(/Users/frontendpraktikant/www/Fronted-praksa/bgimage-companies.png);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: baseline;
+    position: relative;
 }
 
 .margin-container-with-blogs {
@@ -64,14 +77,6 @@ header {
 header .container {
     display: flex;
     justify-content: space-between;
-}
-
-.margin-container-with-map {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-self: baseline;
 }
 
 .menu {
@@ -158,15 +163,28 @@ a {
 
 .h2-heading {
     text-decoration: none;
-    text-align: left;
     text-transform: none;
-    color: black;
-    text-align: justify;
-    list-style-type: none;
-    font-size: 25px;
+    color: #4B545C;
+    font-size: 37px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    position: relative;
+    max-width: 60%;
 }
 
-.container-icons {
+.h2-heading::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 3px;
+    left: -55px;
+    top: 22px;
+    background-color: #FFBC00;
+}
+
+.container-icons-map {
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -175,6 +193,7 @@ a {
     align-items: stretch;
     flex-wrap: wrap;
     align-content: stretch;
+    position: relative;
 }
 
 .section-icons {
@@ -182,77 +201,96 @@ a {
     width: auto;
 }
 
-#icon-l {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    flex-basis: auto;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-    align-content: flex-start;
-}
-
-#icon-r {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    flex-basis: auto;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-wrap: wrap;
-    align-content: flex-end;
-}
-
 .register-yours-yellow {
-    text-align: center;
-    display: flex;
-    color: #FFA500;
-    background-color: white;
+    color: #FFBC00;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
 }
 
-.companies-in-the-iniciative { 
+.companies-in-the-iniciative {
+    color: #4B545C; 
     text-transform: uppercase;
     text-decoration: none;
     font-weight: normal;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Amaranth;
     font-style: normal;
     text-shadow: none;
-    text-align: left;
-    font-size: xx-large;
+    font-size: 31px;
+    line-height: 42px;
+    letter-spacing: 0.2px;
 }
 
-.companies {
+.flex-companies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 25%;
-    margin: 1px solid black;
+    position: relative;
+    flex-basis: auto;
+} 
+
+.company-1 {
+    max-width: 50%;
+} 
+
+.company-2 {
+    max-width: 50%;
+} 
+
+.company-3 {
+    max-width: 50%;
+} 
+
+.company-4 {
+    max-width: 50%;
+} 
+
+.flex-aside {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis:auto;
 } 
 
 .name-company {
     text-transform: none;
     text-decoration: none;
     font-style: normal;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Raleway;
     font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #333333;
 }
 
 .about-company {
+    color: #4B545C;
     text-transform: none;
     text-decoration: none;
     font-style: normal;
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Raleway;
+    line-height: 24px;
 }
 
 .text-company {
     text-transform: none;
     text-align: left;
     text-decoration: none;
-    text-indent: 6px;
-    font-size: 12px;
-    font-weight: normal;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Raleway;
     font-style: normal;
+    color: #4B545C;
+    max-width: 45%;
 }
 
 .bttn-view-profile {
@@ -278,23 +316,28 @@ a {
 }
 
 .heading-takeoff {
+    color: #4B545C;
     text-decoration: none;
     text-transform: none;
-    text-align: right;
     font-style: normal;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font-size: 15px;
+    font-family: Amaranth;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 42px;
+    letter-spacing: 0.2px;
 }
 
 .paragraph-takeoff {
+    color: #4B545C;
     text-decoration: none;
     text-transform: none;
-    text-align: right;
+    text-align: center;
     font-style: normal;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: normal;
-    font-size: 12px;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 60%;
 }
 
 hr {
@@ -326,44 +369,50 @@ hr {
     text-align: left;
     text-decoration: none;
     text-transform: uppercase;
-    color: #FFA500;
-    font-size: 12px;
+    color: #FFBC00;
+    font-size: 14px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Raleway;
     font-style: normal;
+    line-height: 24px;
+    letter-spacing: 0.2px;
 }
 
 .latest-exchange-stories {
+    color: #4B545C;
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    font-family: Amaranth;
     font-style: normal;
     text-shadow: none;
     text-align: left;
-    font-size: xx-large;
+    font-size: 31px;
+    line-height: 42px;
+    letter-spacing: 0.2px;
 }
 
 .date {
-    color: #DCDCDC;
+    color: #BABABA;
     text-decoration: none;
     text-transform: none;
-    text-align: right;
-    font-size: 7px;
-    font-weight: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Raleway;
     font-style: normal;
+    line-height: 24px;
 }
 
 .blog-headings {
-    color: black;
+    color: #4B545C;
     text-decoration: none;
     text-transform: none;
     text-align: right;
-    font-size: 15px;
+    font-size: 26px;
     font-weight: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Amaranth;
     font-style: normal;
+    line-height: 36px;
 }
 
 .blogs {
@@ -407,13 +456,13 @@ hr {
 }
 
 .inchoo-logo {
-    width: 100px;
-    height: 70px;
+    width: 90px;
+    height: 21px;
 }
 
 .interactiv4-logo{
-    width: 150px;
-    height: 70px;
+    width: 90px;
+    height: 30px;
 }
 
 .footer-paragraph {
@@ -455,8 +504,7 @@ hr {
 .paragraph-logos {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
-    margin-right: 20px;
+    justify-content: space-between;
 }
 
 .nav-link-li-footer {
@@ -495,4 +543,56 @@ hr {
 
 .footer-logo > div {
     margin-bottom: 20px;
-    }
+}
+
+.list-icons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none; 
+    max-width: 687px;   
+}
+
+.li-icon {
+    width: 50%;
+    max-width: 295px;
+    margin-bottom: 18px;
+}
+
+.li-icon i {
+    margin-bottom: 18px;
+    color:blue;
+    position: relative;
+    display: block;
+}   
+
+.icon_blue {
+    width: 120px;
+    height: 61px;
+    display: inline-block;
+}
+
+.icon__1 {
+    background-image: url("icon_1.png");
+}
+
+.icon__2 {
+    background-image: url("icon_2.png");
+}
+
+.icon__3 {
+    background-image: url("icon_3.png");
+}
+
+.icon__4 {
+    background-image: url("icon_4.png");
+}
+
+.map {
+    content: "";
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    left: 580px;
+    top: 70px;
+}
