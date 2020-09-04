@@ -47,12 +47,6 @@
     max-width: 1140px;
     margin: 0 auto;
     background-color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-self: baseline;
-    position: relative;
 }
 
 .container {
@@ -604,11 +598,9 @@ hr {
     top: 70px;
 }
 
-.flex-blogs {
+.flex-blogs .blog {
     display: flex;
-    position: relative;
     flex-direction: row;
-    flex-wrap: wrap;
     flex-basis: auto;
     justify-content: space-between;
 }
