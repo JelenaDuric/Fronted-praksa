@@ -47,6 +47,12 @@
     max-width: 1140px;
     margin: 0 auto;
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-self: baseline;
+    position: relative;
 }
 
 .container {
@@ -413,6 +419,7 @@ hr {
     font-family: Amaranth;
     font-style: normal;
     line-height: 36px;
+    max-width: 60%;
 }
 
 .blogs {
@@ -595,4 +602,17 @@ hr {
     position: absolute;
     left: 580px;
     top: 70px;
+}
+
+.flex-blogs {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: auto;
+    justify-content: space-between;
+}
+
+.paragraph-blog {
+    max-width:55%;
 }
